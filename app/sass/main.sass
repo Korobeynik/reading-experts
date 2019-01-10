@@ -1,0 +1,184 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "base"
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'GothamPro'
+	font-weight: 500
+	overflow-x: hidden
+	color: #fff
+	max-width: 1920px
+	// input, textarea
+	// 	border: #666 1px solid
+	// 	outline: none
+	// 	&:focus:required:invalid
+	// 		border-color: red
+	// 	&:required:valid
+	// 		border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+::-webkit-input-placeholder
+	color: #9b9b9b
+	font-size: 12px
+	font-weight: 500
+	letter-spacing: 0.4px
+	text-transform: uppercase
+	position: relative
+
+::-moz-placeholder
+	color: #9b9b9b
+	font-size: 12px
+	font-weight: 500
+	letter-spacing: 0.4px
+	text-transform: uppercase
+
+::-ms-input-placeholder	
+	color: #9b9b9b
+	font-size: 12px
+	font-weight: 500
+	letter-spacing: 0.4px
+	text-transform: uppercase
+
+::-webkit-textarea-placeholder
+	color: #9b9b9b
+	font-size: 12px
+	font-weight: 500
+	letter-spacing: 0.4px
+	text-transform: uppercase	
+
+// #select
+// 	display: none
+
+select
+	-webkit-appearance: none
+	background: #fff url('../img/down-arrow.svg')
+	background-size: 12px
+	background-position: 95% center
+	background-repeat: no-repeat
+	-moz-appearance: none
+	text-indent: 0.01px
+	text-overflow: ''
+	-ms-appearance: none
+	appearance: none !important
+	font-size: 12px
+	font-weight: 500
+	letter-spacing: 0.4px
+	text-transform: uppercase
+	color: #9b9b9b	
+	option
+		font-size: 12px
+		font-weight: 500
+		letter-spacing: 0.4px
+		text-transform: uppercase	
+	&::-ms-expand
+		display: none
+
+
+.slider
+	position: relative
+	.owl-dots
+		position: absolute
+		bottom: 31%
+		width: 100%
+		height: 75px
+		z-index: 2
+		display: flex
+		justify-content: center
+		button.owl-dot
+			width: 189px
+			height: 100%
+			margin: 0 5px
+			position: relative
+			&.active
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					width: 100%
+					height: 150%
+					left: 0
+					top: -20px
+					z-index: -1
+					background: radial-gradient(circle closest-side at 93px 60px,#f5a623,rgba(0,0,0,0));
+			&:focus
+				outline: none
+			&:nth-child(1)
+				background-image: url('../img/dot1.png')
+				background-size: 100%
+				background-position: center
+				background-repeat: no-repeat	
+			&:nth-child(2)
+				background-image: url('../img/dot2.png')
+				background-size: 100%
+				background-position: center
+				background-repeat: no-repeat	
+			&:nth-child(3)
+				background-image: url('../img/ww.png')
+				background-size: 100%
+				background-position: center
+				background-repeat: no-repeat	
+			&:nth-child(4)
+				background-image: url('../img/dot4.png')
+				background-size: 90%
+				background-position: center	
+				background-repeat: no-repeat		
+	.owl-nav
+		position: absolute
+		top: 45%
+		width: 100%
+		button
+			width: 52px
+			height: 52px
+			border-radius: 50%
+			//background-color: rgba(255,255,255, 0.3) !important
+			background: rgba(255,255,255, 0.1)  url(../img/arrow.svg) !important
+			background-repeat: no-repeat
+			// background-size: 140px
+			background-repeat: no-repeat !important
+			background-size: 15px !important
+			background-position: 45% 50% !important
+			&:hover
+				background: rgba(255,255,255, 0.3)  url(../img/arrow.svg) !important
+				background-repeat: no-repeat !important
+				background-size: 15px !important
+				background-position: 45% 50% !important
+			&:focus
+				outline: none	
+			span
+				display: none
+		.owl-prev
+			position: absolute
+			right: 10%
+			top: 0%
+			z-index: 2
+			transform: rotate(180deg)
+
+		.owl-next
+			position: absolute
+			left: 10%
+			top: 0%
+			z-index: 2	
+
+
+
+
+@import "media" // Always at the end
