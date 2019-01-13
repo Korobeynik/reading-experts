@@ -6,7 +6,15 @@
 @media screen and (min-width: 1500px)
 	header .container .bg2
 		top: 15%
-		
+
+@media screen and (min-width: 1700px)
+	.works-content
+		padding-top: 20%
+	.works .works-bg2
+		top: -40%
+		left: -4%
+	.advantag .adv-bg
+		top: -130px		
 
 // ≥1200px
 +media-breakpoint-down(lg)
@@ -15,183 +23,238 @@
 +media-breakpoint-down(md)
 
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1200px)
 	body,html
 		overflow-x: hidden
+	.advantag .adv-bg
+		top: -80px
+	.works-content
+		flex-wrap: wrap
+		margin-bottom: 230px
+	.works-title
+		width: 100%
+		text-align: center
+		margin-bottom: 50px
+	.discount2
+		padding-left: 5%
+	.section-bg
+		top: -490px					
 
 // ≥768px
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 960px)
 	body,html
 		overflow-x: hidden
-	.search-form
-		flex-wrap: wrap
-		padding-left: 0
-		padding-right: 0
-		padding-top: 10px
-		background-color: transparent
-	.info
-		margin-top: 0
-		padding-top: 300px
-		background-color: #000
-		background-image: none
-		z-index: 0
-	.coaches-grid,
-	.footer-section
-		flex-wrap: wrap		
-	.logo
-		font-size: 30px
-		margin-bottom: 0
-	.search-title
-		font-size: 36px
-	.search-text
-		font-size: 18px
-		line-height: 1.17
-	.search-form
-		background-color: #000 
-		.email,select,.base-btn
-			width: 100%
-			height: 56px
-			max-width: 100%
-			margin-bottom: 15px
-	.slider .slider-item
-		height: 300px
-	.slider .owl-dots
-		z-index: 20
-		bottom: 0
-	.search-form
-		margin-top: 130px
-
-	.owl-carousel
-		z-index: 2
-
-	.slider .owl-nav
-		z-index: 20
-		display: none
-	.slider .owl-nav .owl-prev
-		right: 1%
-	.slider .owl-nav .owl-next
-		left: 1%
-	.base-title
-		text-align: center
-		font-size: 40px
-		position: relative
-		z-index: 2
-	.base-text, .info-text
-		font-size: 16px
-		text-align: center
-	.info-small-title
-		font-size: 18px
-		text-align: center
-		margin-bottom: 10px
-	.base-btn,
-	.base-btn.btn-large
-		max-width: 100%	
-	.service
-		padding-top: 40px !important
-		.base-btn.btn-large
+	.advantag 
+		background-image: url(../img/advg-mobile.svg)
+		padding-top: 50px
+		.adv-bg
 			display: none
-	.service-grid
-		.owl-nav
-			display: none		
-		.owl-dots
-			position: absolute
-			bottom: -90px
-			width: 100%
-			height: 75px
-			z-index: 2
-			display: flex
-			justify-content: center
-			button.owl-dot
-				width: 15px
-				height: 15px
-				margin: 0 5px	
-				border: 2px solid $orange
-				border-radius: 50%
-				background-color: transparent
-				&.active
-					background-color: $orange
-	.service-icon
-		top: 0
-		margin-bottom: 15px
-	.service-item
-		padding-top: 20px
-	.service-info .base-title
-		line-height: 40px
-	.coaches .base-text
-		font-size: 18px
-		margin-top: 20px
-	.coaches-item
-		min-width: 100%
-		margin-bottom: 25px	
-	.coaches-grid
-		margin-bottom: 30px	
-	.top-coaches-item
-		min-width: 100%
-		margin-bottom: 50px
-	.reviews	
-		h2.base-title
-			line-height: 40px	
-	.reviews-slider-item .review-avatar
-		position: absolute
-	.reviews-slider-item .review-name
-		text-align: right
-	.reviews-slider-item .review-title
-		margin-top: 55px
-	.support
-		order: -2
-		margin-bottom: 20px	
-	.partners
-		order: -1
-		margin-bottom: 15px
-	.partners img
-		width: 40px	
-	.footer-section
-		margin-top: 50px
-	.search-form
-	.base-btn, .email, select
-		width: 100%
-		height: 56px
-		max-width: 100%
-		margin-bottom: 15px
-		display: flex
-		align-items: center
+	.s-title
+		text-align: center
+		font-size: 36px
+		line-height: 1.17
+		margin-bottom: 20px
+	.row.advantag-grid.owl-carousel.owl-loaded.owl-drag
+		margin: 0
+	.advantag-grid .advantag-item
+		flex-wrap: wrap
 		justify-content: center
-
-	::-webkit-input-placeholder
-		font-size: 12px
-		font-weight: 500
-		letter-spacing: 0.4px
-		text-transform: uppercase
+	.advantag-grid .advantag-item .item-icon
+		margin: 0
 		position: relative
-		bottom: -5px
-		
+		margin-top: -100px
+		z-index: 5
+		margin-bottom: 15px
+	.owl-carousel .owl-stage
+		padding-top: 80px
+	.item-content
+		text-align: center
+	.advantag-grid .advantag-item
+		padding-bottom: 45px
+		border-radius: 15px
+		min-height: 335px
+	.owl-nav
+		display: none
+	.advantag	
+		.owl-dots
+			text-align: center
+			padding-top: 0px
+			.owl-dot
+				width: 12px
+				height: 12px
+				border-radius: 50%
+				background-color: #3a89db
+				margin: 0 4px
+				&.active
+					background-image: linear-gradient(to bottom, #fcb563, #ff8842)
+		.adv-bg
+			display: none
+		.adv-bg-mobile
+			display: block
+			position: absolute
+			width: 100%
+			top: -60px
 
-	::-moz-placeholder
-		color: #9b9b9b
-		font-size: 12px
-		font-weight: 500
-		letter-spacing: 0.4px
-		text-transform: uppercase
-		position: relative
-		bottom: -5px
+	.works .works-bg
+		left: -1px		
 
-	::-ms-input-placeholder	
-		color: #9b9b9b
-		font-size: 12px
-		font-weight: 500
-		letter-spacing: 0.4px
-		text-transform: uppercase
-		position: relative
-		bottom: -5px
+	header
+		padding-bottom: 0
+		.container 
+			.bg2
+				display: none
+		.b1
+			display: none		
+		.bg1-mobile
+			display: block
+			position: absolute
+			top: 20%
+			left: 19%
+	header .bg1
+		display: none				
+	.logo-col
+		text-align: center
+		margin-bottom: 20px
+	.discount
+		text-align: center
+		font-size: 16px
+		margin-bottom: 25px
+		img
+			width: 28px
+			margin-right: 5px
+			position: relative
+			top: -2px
+	.main-title
+		font-size: 36px
+		text-align: center
+	.main-descr
+		font-size: 16px
+		padding-right: 0
+		text-align: center
+	form
+		flex-wrap: wrap
+		padding-top: 20px
+		input
+			max-width: 100%
+			margin: 0
+			margin-bottom: 15px
+		button
+			max-width: 100%
+	.form-descr
+		font-size: 16px
+		text-align: center							
 
-	::-webkit-textarea-placeholder
-		color: #9b9b9b
-		font-size: 12px
-		font-weight: 500
-		letter-spacing: 0.4px
-		text-transform: uppercase
+
+	.mobile-promo
+		display: block
+		max-width: 100%	
+
+	.works-content
+		padding: 0
+		padding-top: 90px
+		margin-bottom: 100px
+
+	.works-title
+		font-size: 32px
+
+	
+	.works-item 
+		&:nth-child(1)
+			.item-number
+				&:before
+					content: ''
+					display: block
+					width: 300px
+					height: 2px
+					z-index: -1
+					background-color: #fff
+					position: absolute
+					left: -100%
+					top: 49%
+		.item-number
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 300px
+				height: 2px
+				z-index: -1
+				background-color: #fff
+				position: absolute
+				left: 0
+				top: 49%
+
+	.works
+		z-index: 2 
+		.works-bg2
+			display: none
+		.works-bg2-mobile
+			display: block
+			top: 0		
+
+	.works-grid
+		flex-wrap: nowrap
+		overflow-x: auto
 		position: relative
-		bottom: -5px
+		z-index: 10
+		padding-left: 50px
+	.section-bg
+		top: -130px
+		width: 50%
+		left: 50%
+		transform: translateX(-50%)
+	.works
+		.container
+			padding: 0
+	.works-grid		
+		.works-item
+			margin-bottom: 0
+			min-width: 230px
+			&.hidden
+				display: none	
+
+	.discount2
+		padding-left: 0
+		padding: 0 15px							
+									
+	.row.discount2-wrap
+		padding-top: 300px
+	.dicsout-title
+		font-size: 32px
+		text-align: center
+		line-height: 1.2
+		margin-bottom: 10px
+	.dicsout-text
+		text-align: center
+		font-size: 16px
+		margin-bottom: 15px	
+	.discount-form 
+		input
+			max-width: 100%
+		button
+			max-width: 100%
+
+	.footer-line
+		flex-wrap: wrap
+		justify-content: center
+		.email
+			margin-right: 30px
+			margin-bottom: 10px
+		.phone
+			margin-bottom: 20px	
+	.pay
+		margin-left: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		span
+			font-family: 'Core Sans A 65'
+			display: block
+			width: 100%
+			text-align: center
+			margin-bottom: 10px
+
+
 	.slider-settings
 		display: none !important
 	.coaches-item
@@ -217,54 +280,16 @@
 
 
 // ≥576px
-+media-breakpoint-down(xs)
+@media screen and (max-width: 600px)
+	.section-bg
+		width: 80%
+	.footer-line .email
+		margin-right: 0	
 	.info
 		padding-top: 250px
-	.info-image
-		display: none
-	.info-content
-		padding-top: 20px
-		background-image: url(../img/info-image.png)
-		background-size: 51%
-		background-repeat: no-repeat
-		background-position: -35% 50%
-		.base-title
-			margin-bottom: 0
-		.info-text
-			padding-left: 35%
-			text-align: left
-		.info-small-title
-			padding-left: 28%
-		.logo-mobile.base-title
-			display: none
-			position: absolute
-			z-index: 10
-			top: 30px
-			font-size: 30px
-			width: 100%
-			text-align: center
-
-	.search-title-mobile
-		display: none
-		position: absolute
-		z-index: 10
-		top: 75px
-		width: 100%
-		font-size: 35px
-		text-align: center
-
-	.search-text-mobile
-		display: none
-		width: 100%
-		z-index: 10
-		position: absolute
-		width: 100%
-		text-align: center
-		font-size: 20px
-		font-weight: 300
-		top: 130px
-		padding: 0 40px			
-
+	.row.discount2-wrap
+		padding-top: 230px	
+	
 
 /*==========  Mobile First  ==========*/
 
@@ -290,7 +315,6 @@
 	.info
 		margin-top: -370px
 	.logo
-		margin-bottom: 75px
-		margin-top: 65px
+
 	.slider-settings
 		top: 75px					

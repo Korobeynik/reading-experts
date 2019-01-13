@@ -146,13 +146,16 @@ form
 		box-shadow: 0 10px 40px 0 rgba(243, 155, 102, 0.5)
 		&:hover
 			cursor: pointer
-			background-image: linear-gradient(to top, #fcb563, #ff8842)	
+			background-color: #ff8842
+			background-image: none	
 
 .form-descr
 	font-family: 'Core Sans A 35'
 	font-size: 21px
 	color: #000
 
+.bg1-mobile
+	display: none
 
 .advantag
 	background-position: top
@@ -163,6 +166,11 @@ form
 		position: absolute
 		top: -100px
 		width: 100%
+	.adv-bg-mobile
+		display: none	
+
+.mobile-promo
+	display: none
 
 .s-title
 	font-family: 'Core Sans A 65'
@@ -200,20 +208,29 @@ form
 	position: relative
 	overflow: hidden
 	background-image: linear-gradient(to bottom, #fcb563, #ff8842)
+	box-shadow: 0 25px 40px 0 rgba(243, 155, 102, 0.3)
 	.container
 		position: relative
 		z-index: 2
 	.works-bg
 		position: absolute
-		top: 0
+		top: -1px
+		right: 0
+		left: -1px
 		transform: rotate(180deg)
-		width: 100%
+		width: 105%
 		z-index: 1
 	.works-bg2
 		position: absolute
 		left: 0
 		top: -15%
-		width: 100%	
+		width: 110%
+	.works-bg2-mobile
+		display: none
+		position: absolute
+		left: 0
+		top: -15%
+		width: 110%		
 
 .works-title
 	min-width: 288px
@@ -300,6 +317,34 @@ form
 	top: -550px
 	left: -50px
 
+
+.footer-line
+	display: flex
+	padding-top: 55px
+	padding-bottom: 55px
+
+.email
+	font-family: 'Core Sans A 65'
+	font-size: 18px
+	color: #ff7624
+	margin-right: 120px
+	img
+		position: relative
+		top: -1px
+		margin-right: 5px
+
+.phone
+	font-family: 'Core Sans A 65'
+	font-size: 18px
+	color: #3a89db
+	img
+		position: relative
+		top: -1px
+		margin-right: 5px
+
+
+.pay
+	margin-left: auto
 
 .slider
 	position: relative
